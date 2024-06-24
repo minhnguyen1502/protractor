@@ -3,17 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <com.example.protractor.ProtractorView
-        android:id="@+id/angleMeasureView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <com.goodiebag.protractorview.ProtractorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:arcColor="#4a4a4a"
+        app:arcProgressColor="#FF0000"
+        app:tickColor="#4a4a4a"
+        app:tickProgressColor="#abe6"
+        app:textColor="#000"
+        app:textProgressColor="#FF0000"
+        app:angleTextSize="10sp"
+        app:arcWidth="4dp"
+        app:progressWidth="4dp"
+        app:tickOffset="18dp"
+        app:tickLength="10dp"
+        app:angle="15"
+        app:tickIntervals="15"
+        app:ticksBetweenLabel="three"
+        app:touchInside="true"
+        app:roundEdges="true" />
 
     <TextView
         android:id="@+id/angleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 android:text="a"/>
-    <
+
 </RelativeLayout>
